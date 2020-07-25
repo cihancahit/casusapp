@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from \"react\";\n\nconst Footer = () => __jsx(\"div\", {\n  className: \"footer\"\n}, \"SpyGame by \", __jsx(\"a\", {\n  href: \"https://www.m3.com.tr/\"\n}, \"M3WORKS\"));\n\nexport default Footer;","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,10 @@
+{
+  "react-ios-pwa-prompt": [
+    {
+      "id": "+ghl",
+      "name": "./node_modules/react-ios-pwa-prompt/dist/react-ios-pwa-prompt.js",
+      "file": "static/chunks/20.368f82ddceea024986a0.js",
+      "publicPath": "static/chunks/20.368f82ddceea024986a0.js"
+    }
+  ]
+}
