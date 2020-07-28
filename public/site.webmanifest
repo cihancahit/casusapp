@@ -1,6 +1,6 @@
 {
-	"name": "SpyGame",
-	"short_name": "SpyGame",
+	"name": "Spyfall",
+	"short_name": "Spyfall",
 	"icons": [
 		{
 			"src": "/android-chrome-192x192.png",
@@ -15,6 +15,6 @@
 	],
 	"theme_color": "#ffffff",
 	"background_color": "#ffffff",
-	"start_url": "http://37.148.211.61:4001/",
+	"start_url": "https://spyfall.tannerkrewson.com/",
 	"display": "standalone"
 }

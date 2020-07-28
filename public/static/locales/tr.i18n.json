@@ -1,12 +1,11 @@
 {
 	"ui": {
-		"welcome to spyfall": "SpyGame'a Hoşgeldin",
-		"mode":"mod",
+		"welcome to spyfall": "Spyfall'a Hoşgeldin",
 		"new game": "Yeni Oyun",
 		"join game": "Oyuna Katıl",
 		"waiting for players": "Oyuncular Bekleniyor...",
 		"access code": "Erişim kodu",
-		"join my spyfall game": "SpyGame Oyunuma Katıl",
+		"join my spyfall game": "Spyfall Oyunuma Katıl",
 		"start game": "Oyunu Başlat",
 		"leave game": "Oyundan Ayrıl",
 		"show hide": "Göster/Gizle",

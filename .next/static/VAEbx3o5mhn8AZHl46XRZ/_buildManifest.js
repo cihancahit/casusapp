@@ -1,1 +1,0 @@
-self.__BUILD_MANIFEST = (function(a){return {"/":[a],"/[gameCode]":[a],"/index":[a]}}("static\u002Fchunks\u002Fb72a9ca83acd8d8acedd351326a1187c8c573097.2322a33fffc9035a018a.js"));self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
