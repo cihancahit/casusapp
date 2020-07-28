@@ -1,11 +1,12 @@
 {
 	"ui": {
-		"welcome to spyfall": "Welcome to Spyfall",
+		"welcome to spyfall": "Welcome to SpyGame",
 		"new game": "New Game",
+		"mode":"mode",
 		"join game": "Join Game",
 		"waiting for players": "Waiting For Players...",
 		"access code": "Access code",
-		"join my spyfall game": "Join my Spyfall game!",
+		"join my spyfall game": "Join my SpyGame game!",
 		"start game": "Start Game",
 		"leave game": "Leave Game",
 		"show hide": "show/hide",
