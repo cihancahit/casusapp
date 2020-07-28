@@ -76,10 +76,10 @@ const Home = ({ t, i18n, loading }) => {
 							{t("ui.new game")}
 						</button>
 					</div>
-					<div className="button-container-vertical">
+					{/* <div className="button-container-vertical">
 						<AddAppButton />
 					
-					</div>
+					</div> */}
 				
 				</>
 			)}
