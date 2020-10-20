@@ -6,10 +6,9 @@ import "skeleton-css/css/skeleton.css";
 
 import "../styles/styles.less";
 import LanguageSelector from "./LanguageSelector";
-import { withTranslation } from "../utils/i18n";
 import Footer from "./Footer";
 
-const Page = ({ children, onThemeToggle, darkModeActive,t }) => {
+const Page = ({ children, onThemeToggle, darkModeActive }) => {
 	return (
 		<>
 			<Head>
@@ -60,7 +59,7 @@ const Page = ({ children, onThemeToggle, darkModeActive,t }) => {
 						onClick={onThemeToggle}
 						style={{ marginBottom: "1.5em" }}
 					>
-						 {darkModeActive ? "Light" : "Dark"} {t("ui.mode")}
+						 {darkModeActive ? "Light" : "Dark"}
 					</button>
 					<LanguageSelector />
 					<Footer />
@@ -70,4 +69,4 @@ const Page = ({ children, onThemeToggle, darkModeActive,t }) => {
 	);
 };
 
-export default withTranslation ("common")(Page);
+export default Page;

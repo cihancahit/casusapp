@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import Router from "next/router";
 import withDarkMode from "next-dark-mode";
-import { NextDarkModeContext } from "next-dark-mode";
+import { useDarkMode } from "next-dark-mode";
 
 import Page from "../components/Page";
 
@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
 		switchToAutoMode,
 		switchToDarkMode,
 		switchToLightMode,
-	} = useContext(NextDarkModeContext);
+	} = useDarkMode();
 
 	const [loading, setLoading] = useState(false);
 	useEffect(() => {
@@ -62,8 +62,12 @@ function MyApp({ Component, pageProps }) {
 					}
 					button:hover,
 					button:active,
-					button:focus {
+					button:focus,
+					.swal2-container .swal2-title {
 						color: white;
+					}
+					.swal2-container .swal2-popup {
+						background-color: #222;
 					}
 					button:active {
 						background-color: #555;
@@ -85,9 +89,6 @@ function MyApp({ Component, pageProps }) {
 					}
 					.game-countdown {
 						color: #ddd;
-					}
-					.spyfall-back {
-						filter: invert(1);
 					}
 					.access-code,
 					.access-code > span {
