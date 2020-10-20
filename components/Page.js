@@ -6,9 +6,10 @@ import "skeleton-css/css/skeleton.css";
 
 import "../styles/styles.less";
 import LanguageSelector from "./LanguageSelector";
+import { withTranslation } from "../utils/i18n";
 import Footer from "./Footer";
 
-const Page = ({ children, onThemeToggle, darkModeActive }) => {
+const Page = ({ children, onThemeToggle, darkModeActive,t }) => {
 	return (
 		<>
 			<Head>
@@ -18,17 +19,17 @@ const Page = ({ children, onThemeToggle, darkModeActive }) => {
 					name="viewport"
 					content="width=device-width, initial-scale=1, maximum-scale=1"
 				/>
-				<meta name="description" content="By Tanner Krewson" />
-				<meta name="keywords" content="crabhat, app, online, spyfall 2" />
+				<meta name="description" content="By M3WORKS" />
+				<meta name="keywords" content="spygame" />
 				<meta
 					name="google-site-verification"
 					content="RjPwvAWbCuLI-PVrf0kdrN4cMCwTcy7nx85lTXTZsao"
 				/>
-				<meta name="apple-mobile-web-app-title" content="Spyfall" />
-				<meta name="application-name" content="Spyfall" />
+				<meta name="apple-mobile-web-app-title" content="SpyGame" />
+				<meta name="application-name" content="SpyGame" />
 				<meta name="msapplication-TileColor" content="#ffffff" />
 				<meta name="theme-color" content="#ffffff" />
-				<title>Spyfall</title>
+				<title>SpyGame</title>
 
 				<link
 					rel="apple-touch-icon"
@@ -59,7 +60,7 @@ const Page = ({ children, onThemeToggle, darkModeActive }) => {
 						onClick={onThemeToggle}
 						style={{ marginBottom: "1.5em" }}
 					>
-						Switch to {darkModeActive ? "Light" : "Dark"} Mode
+						 {darkModeActive ? "Light" : "Dark"} {t("ui.mode")}
 					</button>
 					<LanguageSelector />
 					<Footer />
@@ -69,4 +70,4 @@ const Page = ({ children, onThemeToggle, darkModeActive }) => {
 	);
 };
 
-export default Page;
+export default withTranslation ("common")(Page);
