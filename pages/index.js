@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
-
 import { withTranslation } from "../utils/i18n";
 import Loading from "../components/Loading";
 import Swal from "sweetalert2";
 import { lockedMessage } from "../utils/misc";
-import AddAppButton from "../components/AddAppButton";
+
 
 const Home = ({ t, i18n, loading }) => {
 	const router = useRouter();
