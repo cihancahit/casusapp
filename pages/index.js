@@ -44,7 +44,7 @@ const Home = ({ t, i18n, loading }) => {
 		}
 	};
 
-	const showSpyfallBack = i18n.language === "tr";
+	const showSpyfallBack = i18n.language === "en";
 
 	return (
 		<div className="main-menu">
@@ -56,10 +56,10 @@ const Home = ({ t, i18n, loading }) => {
 				}}
 			>
 				<h3>{t("ui.welcome to spyfall")}</h3>
-				
-					<img className="spyfall-back" src="/m3works.png" alt="back" />
-				
-				
+				{showSpyfallBack && (
+					<img className="spyfall-back" src="/back.svg" alt="back" />
+				)}
+				<div className="subtitle formerly">(formerly Meteor/Crabhat)</div>
 			</div>
 			<hr />
 
@@ -76,11 +76,38 @@ const Home = ({ t, i18n, loading }) => {
 							{t("ui.new game")}
 						</button>
 					</div>
-					{/* <div className="button-container-vertical">
+					<div className="button-container-vertical">
 						<AddAppButton />
-					
-					</div> */}
-				
+						<Link href="/how-to-play">
+							<button className="btn-small btn-vertical">How to Play</button>
+						</Link>
+						<Link href="/more-games">
+							<button className="btn-small btn-vertical">
+								Games Like Spyfall
+							</button>
+						</Link>
+						<a
+							href="https://github.com/tannerkrewson/spyfall/blob/dev/README.md#history"
+							target="_blank"
+							rel="noopener noreferrer"
+							style={{ width: "100%" }}
+						>
+							<button className="btn-small btn-vertical">Crabhat?</button>
+						</a>
+						<a
+							href="https://docs.google.com/forms/d/e/1FAIpQLSe0lIL4ZYxyKDNHqv25VkLqOg7tk2VhOcOA-yDAuYxKFx6kyw/viewform?usp=sf_link"
+							target="_blank"
+							rel="noopener noreferrer"
+							style={{ width: "100%" }}
+						>
+							<button className="btn-small btn-vertical">
+								Submit Feedback
+							</button>
+						</a>
+						<div style={{ marginTop: "1em" }}>
+							<BuyMe />
+						</div>
+					</div>
 				</>
 			)}
 		</div>

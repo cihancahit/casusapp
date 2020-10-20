@@ -57,7 +57,7 @@ const AddAppButton = () => {
 		<>
 			{!isAlreadyPWA && (
 				<button className="btn-small btn-vertical" onClick={handleAddApp}>
-					{isLoading ? "Loading..." : "Add SpyGame as App"}
+					{isLoading ? "Loading..." : "Add Spyfall as App"}
 				</button>
 			)}
 			{showiOS && (
